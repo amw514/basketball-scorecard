@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="img/basketball.png" />
+    <title>Basketball Scoreboard</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div>
+        <h3>First Team</h3>
+        <div class="score-card">
+          <p id="home-points">0</p>
+        </div>
+        <div class="plus-point">
+          <button id="home-one" class="hvr-push" onclick="homeAdd1()">
+            +1
+          </button>
+          <button id="home-two" class="hvr-push" onclick="homeAdd2()">
+            +2
+          </button>
+          <button id="home-three" class="hvr-push" onclick="homeAdd3()">
+            +3
+          </button>
+        </div>
+        <p id="leadingTeam"></p>
+      </div>
+      <div>
+        <h3>Second Team</h3>
+        <div class="score-card">
+          <p id="guest-points">0</p>
+        </div>
+        <div class="plus-point">
+          <button id="guest-one" class="hvr-push" onclick="guestAdd1()">
+            +1
+          </button>
+          <button id="guest-two" class="hvr-push" onclick="guestAdd2()">
+            +2
+          </button>
+          <button id="guest-three" class="hvr-push" onclick="guestAdd3()">
+            +3
+          </button>
+        </div>
+        <div class="controls">
+          <button id="new-game" class="hvr-push" onclick="newGame()">
+            New Game
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="particles-js"></div>
+    <canvas class="background"></canvas>
+    <script src="index.js"></script>
+    <script src="node_modules/particlesjs/dist/particles.min.js"></script>
+  </body>
+</html>

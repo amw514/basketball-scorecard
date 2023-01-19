@@ -1,0 +1,113 @@
+@font-face {
+    font-family: 'Verdana';
+    src: url('../fonts/verdana.ttf');
+}
+@font-face {
+    font-family: 'Cursed Timer ULiL';
+    src: url('../fonts/CursedTimerUlil-Aznm.ttf');
+}
+body {
+    margin: 0;
+    background-image: url('../img/cool-background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed; 
+    background-position: center;
+}
+.background {
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+  }
+.container {
+    display: flex;
+    justify-content: space-around;
+    background:  #1B244A;
+    width: 575px;
+    height: 385px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 23px -4px rgba(197, 183, 183, 0.75);
+    position: relative;
+    top: 200px;
+    Left: 600px;
+}
+h3,#leadingTeam{
+    font-family: 'Cursed Timer ULiL', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 36px;
+    text-align: center;
+    color: #EEEEEE;
+}
+.score-card{
+    width: 155px;
+    height: 120px;
+    position: relative;
+    left: 5px;
+    background: #080001;
+    border-radius: 5px;
+}
+#home-points,#guest-points{
+    font-family: 'Cursed Timer ULiL';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 90px;
+    line-height: 127px;
+    margin-top: 0px;
+    text-align: center;
+    color: #F94F6D;
+}
+.plus-point{
+    display: flex;
+    justify-content: space-around;
+}
+.plus-point button{
+    border: 2px solid #9AABD8;
+    border-radius: 5px;
+    width: 45px;
+    height: 45px;
+    font-family: 'Cursed Timer ULiL', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    text-align: center;
+    color: #9AABD8;
+    background-color: #1B244A;
+    position: relative;
+    top:50px;
+    left: 8px;
+}
+/* active Push */
+.hvr-push:active {
+    background-color: #9AABD8;
+    color: white;
+    border-color:green;
+    box-shadow: 0px 0px 10px green;
+    transform: scale(1.1);
+}
+#new-game{
+    position: relative;
+    top:6px;
+    right: 90px;
+    border: 2px solid #9AABD8;
+    border-radius: 5px;
+    width: 70px;
+    height: 50px;
+    font-family: 'Cursed Timer ULiL', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    text-align: center;
+    color: #9AABD8;
+    background-color: #1B244A;
+}
+#leadingTeam{
+position: relative;
+left:50px;
+top:70px;
+font-size: 15px;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
